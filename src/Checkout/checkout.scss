@@ -1,0 +1,32 @@
+.boton{
+    padding: 4px;
+    border-radius: 5px;
+    color: #28282B;
+    border-color: #CC5500;
+    background-color: #CC5500;
+    margin: 8px;
+
+    &:hover{
+        background-color: #28282B;
+        color: #CC5500;
+        border-color: #CC5500;
+    }
+}
+
+.input{
+    width: 50%;
+}
+
+.ordenRealizada{
+    color: black;
+    background-color: aliceblue;
+    height: 500px;
+    border-radius: 10px;
+    font-size: 26px;
+}
+
+.checkout{
+    height: 600px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}

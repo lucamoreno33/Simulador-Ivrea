@@ -1,0 +1,52 @@
+.itemCount{
+    display: flex;
+    margin-bottom: 30px;
+    width: 100%;
+    &-botonera{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: solid 0.5px #dc7633;
+        width: 30%;
+        background-color: #dc773367;
+    }
+    &-mas{
+        background-color: #dc7633;
+        color: aliceblue;
+        border-radius: 0%;
+        &:hover{
+            background-color: #b9642b;
+        }
+        &:disabled{
+            background-color: #77401c;
+            border: solid 1px #77401c;
+        }
+    }
+    &-menos{
+        background-color: #dc7633;
+        color: aliceblue;
+        border-radius: 0%;
+        &:hover{
+            background-color: #b9642b;
+        }
+        &:disabled{
+            background-color: #77401c;
+            border: solid 1px #77401c;
+        }
+    }
+    &-buy{
+        background-color: #dc7633;
+        color: aliceblue;
+        &:hover{
+            background-color: #b9642b;
+        }
+    }
+}
+
+@media (min-width: 769px){
+    .itemCount{
+        &-botonera{
+            width: 20%;
+        }
+    }
+}

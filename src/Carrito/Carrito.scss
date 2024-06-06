@@ -1,0 +1,24 @@
+.carro{
+    margin-top: 100px;
+    &-vaciar{
+        
+        padding: 4px;
+        border-radius: 5px;
+        color: #28282B;
+        border-color: #CC5500;
+        background-color: #CC5500;
+        margin: 8px;
+    
+        &:hover{
+            background-color: #28282B;
+            color: #CC5500;
+            border-color: #CC5500;
+        }
+    }
+    
+    &-total{
+        color: #CC5500;
+        font-weight: 600;
+        font-size: 30px;
+    }
+}

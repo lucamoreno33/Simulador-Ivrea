@@ -1,0 +1,10 @@
+.ItemCollectionList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    &-title{
+        width: 90%;
+
+    }
+}

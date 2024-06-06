@@ -1,0 +1,50 @@
+.cardCarro{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    border-bottom: solid 0.5px #dc7733ad;
+    padding: 5px;
+    margin: 5px;
+
+
+    
+    &-img{
+        height: 90px;
+        
+    }
+    &-titulo{
+        font-size: 20px;
+        border-bottom: solid 0.5px rgb(26, 25, 25);
+        padding: 0;
+        margin: 0;
+        
+
+    }
+    &-data{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    &-texto{
+        margin: 0;
+        font-size: 13px;
+        
+    }
+    &-trashcan{
+        font-size: 40px;
+        background-color: white;
+        padding: 5px;
+        border-radius: 5px;
+        align-self: center;
+        margin-right: 20px;
+        &:hover{
+            cursor: pointer;
+            background-color: #CC5500;
+            color: white;
+            
+        }
+    }
+    
+    
+}
