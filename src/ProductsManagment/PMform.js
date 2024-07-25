@@ -29,6 +29,15 @@ export const PMform = (props) => {
                     name="imagen"
                     required
                 />
+                <h2>Numero de tomo</h2>
+                <input
+                    value={values.NumeroTomo}
+                    type="text"
+                    className=""
+                    onChange={handleInputChange}
+                    name="NumeroTomo"
+                    required
+                />
                 <h2>Precio</h2>
                 <input
                     value={values.precio}

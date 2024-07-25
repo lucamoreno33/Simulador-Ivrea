@@ -32,11 +32,11 @@ export const ItemlistContainer = () => {
     ));
     return (
         
-        <section className='d-flex flex-column seccion'>
+        <section className='d-flex flex-column seccion justify-content-center'>
             <h2 className="subtitulo mx-2">Novedades de la semana</h2>
             {loading
-            ? <div className="my-2 d-flex row justify-content-center">{marcadoresCarga}</div>
-            : <div className=" my-2">   
+            ? <div className="my-2 d-flex row justify-content-center  ">{marcadoresCarga}</div>
+            : <div className=" my-2 w-40">   
                 <Itemlist items={libros}/>
                 </div>
             }

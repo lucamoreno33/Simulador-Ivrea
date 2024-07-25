@@ -22,7 +22,21 @@ const ItemDetailContainer = () => {
                 getDocs(coleccionDelLibro)
                     .then((querySnapshot) => {
                         const librosArray = querySnapshot.docs.map((doc) => doc.data())
-                        setLibros(librosArray)
+                         // Filtrar el libro actual
+                        const librosFiltrados = librosArray.filter((libro) => libro.id !== libroId)
+
+                        if (librosArray.length === 1){
+                            const TipoLibro = librosArray[0].tipo
+                            const filtro = TipoLibro
+                                            ? query(coleccionProductos, where("tipo", "==", TipoLibro))
+                                            : coleccionProductos
+                            getDocs(filtro)
+                                .then((res) => {
+                                    const tomoUnoLibros = res.docs.filter((doc) => doc.data().NumeroTomo === 1);
+                                    const tomoUnoLibrosFiltrado = tomoUnoLibros.filter((libro) => libro.id !== libroId)
+                                    setLibros(tomoUnoLibrosFiltrado.map((doc) => doc.data()));
+                                })
+                        } setLibros(librosFiltrados)
                     })
             })
         .finally(() => setLoading(false))}
@@ -46,3 +60,4 @@ const ItemDetailContainer = () => {
 }
 
 export default ItemDetailContainer
+

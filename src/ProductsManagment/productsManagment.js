@@ -8,7 +8,7 @@ const ProductsManagment = () => {
 
     const handleInputChange = (e) => setValues({...values, [e.target.name]: e.target.value})
 
-    const addProduct = async (imagen, nombre, precio, descripcion, stock, tipo) =>{
+    const addProduct = async (imagen, nombre, precio, descripcion, stock, tipo, NumeroTomo) =>{
         try {
             const articulo = {
                 imagen,
@@ -16,7 +16,8 @@ const ProductsManagment = () => {
                 precio,
                 descripcion,
                 stock,
-                tipo
+                tipo,
+                NumeroTomo
             };
         
             const productosRef = collection(database, "productos")
@@ -48,7 +49,8 @@ const ProductsManagment = () => {
         e.preventDefault()
         const precio =  parseInt(values.precio)
         const stock = parseInt(values.stock)
-        addProduct(values.imagen, values.nombre, precio, values.descripcion, stock, values.tipo)
+        const NumeroTomo = parseInt(values.NumeroTomo)
+        addProduct(values.imagen, values.nombre, precio, values.descripcion, stock, values.tipo, NumeroTomo)
     }
 
     return(

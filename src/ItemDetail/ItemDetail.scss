@@ -1,9 +1,9 @@
 .ItemDetail{
-    margin-top: 90px;
+    
     &-main{
         color: #17202a;
-        height: 700px
-        ;
+        margin-left: 10px;
+        margin-right: 10px;
         
 
     }
@@ -20,7 +20,7 @@
     &-texto{
         overflow: hidden;
         margin: 0, 0, 0, 7px;
-        font-size: 12px;
+        font-size: 10px;
         width: 90%;
     }
     &-precio{
@@ -35,18 +35,21 @@
 
 @media (min-width: 769px){
     .ItemDetail{
-        height: 420px;
+        height: 490px;
+        margin-left: 8%;
+        margin-right: 15%;
         &-main{
             display: flex;
             height: 100%;
         }
         
         &-imagen{
-            width: 35%;
+            width: 60%;
             height: 100%;
         }
         &-texto{
             margin-top: 30px;
+            width: 60%;
         }
         &-precio{
             margin-top: 24px;
@@ -62,6 +65,7 @@
         &-Count{
             margin-top: auto;
         }
+        
     }
 
 }

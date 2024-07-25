@@ -1,18 +1,16 @@
 .carro{
-    margin-top: 100px;
+    margin-top: 20px;
+    margin-bottom: 40px;
     &-vaciar{
         
         padding: 4px;
         border-radius: 5px;
-        color: #28282B;
-        border-color: #CC5500;
-        background-color: #CC5500;
+        color: aliceblue;
+        background-color: #dc7633;
         margin: 8px;
     
         &:hover{
-            background-color: #28282B;
-            color: #CC5500;
-            border-color: #CC5500;
+            background-color: #b9642b;
         }
     }
     

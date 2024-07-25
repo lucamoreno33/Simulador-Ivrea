@@ -1,19 +1,26 @@
 .itemCount{
     display: flex;
     margin-bottom: 30px;
-    width: 100%;
+    width: 70%;
+    height: 30px;
     &-botonera{
         display: flex;
         justify-content: space-between;
+        font-size: 13px;
         align-items: center;
         border: solid 0.5px #dc7633;
         width: 30%;
         background-color: #dc773367;
     }
     &-mas{
+        display: flex;
         background-color: #dc7633;
         color: aliceblue;
         border-radius: 0%;
+        height: 100%;
+        width: 30%;
+        align-items: center;
+        justify-content: center;
         &:hover{
             background-color: #b9642b;
         }
@@ -23,9 +30,14 @@
         }
     }
     &-menos{
+        display: flex;
         background-color: #dc7633;
         color: aliceblue;
         border-radius: 0%;
+        height: 100%;
+        width: 30%;
+        align-items: center;
+        justify-content: center;
         &:hover{
             background-color: #b9642b;
         }
@@ -35,8 +47,11 @@
         }
     }
     &-buy{
+        display: flex;
         background-color: #dc7633;
         color: aliceblue;
+        align-items: center;
+        font-size: 13px;
         &:hover{
             background-color: #b9642b;
         }
@@ -45,8 +60,11 @@
 
 @media (min-width: 769px){
     .itemCount{
+        width: 100%;
+        height: 34px;
         &-botonera{
-            width: 20%;
+            width: 30%;
+            height: 100%;
         }
     }
 }
